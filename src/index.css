@@ -205,3 +205,28 @@
 .album-button-details:hover {
   color: var(--white);
 }
+
+/* Table */
+
+.album-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-header-cell {
+  padding: 10px;
+}
+
+.header-table {
+  border-bottom: 1px solid var(--gray);
+  color: var(--gray);
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  text-align: left;
+}
+
+.table-header-cell:nth-child(3),
+.table-header-cell:nth-child(4) {
+  width: 200px;
+  margin: 0 40px;
+}

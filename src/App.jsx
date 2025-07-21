@@ -11,10 +11,8 @@ function App() {
     <>
     <Header />
       <FollowBar />
-      <div className="album-info">
-        <div className="album-content">
-          <AlbumDetails/>
-        </div>
+      <div className="artist-container">
+            <AlbumDetails/>
       </div>
     </>
   )
