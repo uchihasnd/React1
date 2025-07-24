@@ -213,6 +213,15 @@
   width: 100%;
 }
 
+.a-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.a-link:hover {
+  text-decoration: underline;
+}
+
 .table-header-cell {
   padding: 10px;
 }
@@ -229,4 +238,22 @@
 .table-header-cell:nth-child(4) {
   width: 200px;
   margin: 0 40px;
+}
+
+.album-cell {
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.row-album:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.band-name {
+  color: var(--gray);
+  font-size: var(--font-size-small);
+}
+
+.band-name:hover {
+  color: var(--white);
 }
