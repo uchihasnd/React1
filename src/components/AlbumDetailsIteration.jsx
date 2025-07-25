@@ -29,7 +29,7 @@ export default function DetailsIteration({ albumsInfo }) {
               </div>
             </div>
             <div className="table-container">
-              <TableAlbum />
+              <TableAlbum tracks={tracks.items} />
             </div>
           </div>
         );

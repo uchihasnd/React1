@@ -2,11 +2,11 @@ import TableBody from "./TableBody";
 import TableData from "./TableData";
 import TableHeaders from "./TableHeaders";
 
-export default function TableAlbum() {
+export default function TableAlbum({ tracks }) {
   return (
     <table className="album-table">
       <TableHeaders />
-      <TableBody />
+      <TableBody tracks={tracks} />
     </table>
   );
 }
