@@ -2,14 +2,15 @@ import Header from "./components/Header";
 import "./App.css";
 import FollowBar from "./components/FollowBar";
 import AlbumDetails from "./components/AlbumDetails";
-import FixedDiv from "./components/FixedDiv";
+import data from "./js/data";
 
 function App() {
+  const artistName = data.artistUnion.profile.name;
+
   return (
     <>
       <Header />
-      <FollowBar />
-      {/* <FixedDiv /> */}
+      <FollowBar artistName={artistName} />
       <div className="artist-container">
         <AlbumDetails />
       </div>
