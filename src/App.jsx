@@ -1,21 +1,20 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import Header from './components/Header'
-import './App.css'
-import FollowBar from './components/FollowBar'
-import AlbumDetails from './components/AlbumDetails'
+import Header from "./components/Header";
+import "./App.css";
+import FollowBar from "./components/FollowBar";
+import AlbumDetails from "./components/AlbumDetails";
+import FixedDiv from "./components/FixedDiv";
 
 function App() {
-
   return (
     <>
-    <Header />
+      <Header />
       <FollowBar />
+      {/* <FixedDiv /> */}
       <div className="artist-container">
-            <AlbumDetails/>
+        <AlbumDetails />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
