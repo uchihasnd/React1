@@ -149,9 +149,10 @@
   text-decoration: underline;
 }
 
-/* .playButtonHover {
+.playButtonHover {
   text-align: center;
-} */
+  cursor: pointer;
+}
 
 .button-table {
   background-color: transparent;
@@ -160,10 +161,30 @@
   color: var(--white);
   margin-left: 5px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .row-album:hover .button-table {
   opacity: 1;
+}
+
+.duration-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.duration-time {
+  text-align: center;
+  width: 40px;
+}
+
+.icon-header {
+  font-size: var(--font-size-small) !important;
+  text-align: center;
+  width: 60%;
 }
 
 .track-cell {
@@ -271,6 +292,10 @@
   text-align: left;
 }
 
+.table-header-cell:nth-child(1) {
+  width: 10px;
+}
+
 .table-header-cell:nth-child(3),
 .table-header-cell:nth-child(4) {
   width: 200px;
@@ -284,6 +309,7 @@
 
 .row-album:hover {
   background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 80px;
 }
 
 .band-name {
