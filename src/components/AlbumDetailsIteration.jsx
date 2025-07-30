@@ -25,7 +25,7 @@ export default function DetailsIteration({ albumsInfo }) {
                 <p className="details">
                   {type} • {date.year} • {tracks.totalCount} Tracks
                 </p>
-                <AlbumButtons />
+                <AlbumButtons albumName={albumName} />
               </div>
             </div>
             <div className="table-container">

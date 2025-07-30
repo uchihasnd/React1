@@ -18,7 +18,10 @@ export default function TableRow({ tracksInfo }) {
         <TrackNumberCell trackNumber={trackNumber} />
         <SongNameCell songName={trackName} bandName={profile.name} />
         <PlaycountCell playcount={Number(playcount).toLocaleString()} />
-        <MillisecondsConverter totalMilliseconds={totalMilliseconds} />
+        <MillisecondsConverter
+          totalMilliseconds={totalMilliseconds}
+          songName={trackName}
+        />
       </tr>
     </>
   );

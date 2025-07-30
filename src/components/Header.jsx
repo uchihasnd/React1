@@ -17,6 +17,7 @@ export default function Header() {
           <span className="material-symbols-outlined verified-icon filled-icon">
             verified
           </span>
+          <span className="circle-white"></span>
           <span className="info-header-text">
             {data.artistUnion.profile.verified ? "Verified Artist" : ""}
           </span>

@@ -1,7 +1,7 @@
 import ButtonLikedSong from "./ButtonLikedSong";
 import MoreOptionsSong from "./MoreOptionsSong";
 
-export default function DurationCell({ minutes, seconds }) {
+export default function DurationCell({ minutes, seconds, songName }) {
   return (
     <td className="album-cell">
       <div className="duration-container">
@@ -9,7 +9,7 @@ export default function DurationCell({ minutes, seconds }) {
         <span className="duration-time">
           {minutes}:{seconds}
         </span>
-        <MoreOptionsSong />
+        <MoreOptionsSong songName={songName} />
       </div>
     </td>
   );
