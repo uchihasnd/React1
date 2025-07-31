@@ -1,10 +1,10 @@
-import LikedSongTooltip from "./tooltips/LikedSongTooltip";
+import Tooltip from "./tooltips/Tooltip";
 
 export default function ButtonLikedSong() {
   return (
     <button className="button-table tooltip">
       <span className="material-symbols-outlined small-icon">add_circle</span>
-      <LikedSongTooltip />
+      <Tooltip tooltipText={"Add to liked songs"} />
     </button>
   );
 }
