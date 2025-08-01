@@ -27,6 +27,7 @@
 
 /* Header */
 .header-artist {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -44,6 +45,7 @@
   display: flex;
   gap: 5px;
   margin: 0 0 10px 20px;
+  position: relative;
 }
 
 .info-header-text {
@@ -53,7 +55,6 @@
 
 .verified-icon {
   color: var(--verified-icon);
-  position: relative;
   z-index: 1;
 }
 
@@ -61,7 +62,7 @@
   background-color: var(--white);
   border-radius: 50%;
   height: 15px;
-  left: 1.5%;
+  left: 2.9%;
   position: absolute;
   top: 24.2%;
   width: 15px;
@@ -82,7 +83,7 @@
 
 .artist-fixed {
   font-size: var(--font-size-big);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* Play all albums button, follow button */

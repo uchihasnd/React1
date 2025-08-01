@@ -15,7 +15,7 @@ export default function Header({
         }}
       >
         <span className="header-info">
-          {verified ? (
+          {verified && (
             <>
               <span className="material-symbols-outlined verified-icon filled-icon">
                 verified
@@ -23,8 +23,6 @@ export default function Header({
               <span className="circle-white"></span>
               <span className="info-header-text">Verified Artist</span>
             </>
-          ) : (
-            ""
           )}
         </span>
         <h1 className="artist-title header-info">{artistName}</h1>
