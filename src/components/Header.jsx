@@ -1,19 +1,21 @@
-import data from "../js/data";
-
-export default function Header() {
-  const backgroundheader = data.artistUnion.visuals.headerImage.sources[0].url;
+export default function Header({
+  artistName,
+  verified,
+  monthlyListeners,
+  url,
+}) {
   return (
     <>
       <div
         className="header-artist"
         style={{
-          backgroundImage: `url(${backgroundheader})`,
+          backgroundImage: `url(${url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <span className="header-info">
-          {data.artistUnion.profile.verified ? (
+          {verified ? (
             <>
               <span className="material-symbols-outlined verified-icon filled-icon">
                 verified
@@ -25,12 +27,9 @@ export default function Header() {
             ""
           )}
         </span>
-        <h1 className="artist-title header-info">
-          {data.artistUnion.profile.name}
-        </h1>
+        <h1 className="artist-title header-info">{artistName}</h1>
         <span className="header-info info-header-text">
-          {data.artistUnion.stats.monthlyListeners.toLocaleString()} monthly
-          listeners
+          {monthlyListeners.toLocaleString()} monthly listeners
         </span>
       </div>
     </>

@@ -1,7 +1,7 @@
 import AlbumButtons from "./AlbumButtons";
 import TableAlbum from "./TableAlbum";
 
-export default function DetailsIteration({
+export default function DetailsContent({
   albumInfo: { albumName, coverArt, tracks, type, date },
 }) {
   return (
