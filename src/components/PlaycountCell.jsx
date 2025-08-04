@@ -1,3 +1,3 @@
 export default function PlaycountCell({ playcount }) {
-  return <td className="album-cell">{playcount}</td>;
+  return <td className="centered-cell">{playcount}</td>;
 }

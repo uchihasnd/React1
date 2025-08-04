@@ -14,7 +14,7 @@ export default function TableRow({ tracksInfo }) {
 
   return (
     <>
-      <tr className="row-album">
+      <tr className="color-hover opacity">
         <TrackNumberCell trackNumber={trackNumber} />
         <SongNameCell songName={trackName} bandName={profile.name} />
         <PlaycountCell playcount={Number(playcount).toLocaleString()} />

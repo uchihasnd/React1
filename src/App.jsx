@@ -38,7 +38,7 @@ function App() {
         url={url}
       />
       <FollowBar artistName={artistName} />
-      <div className="artist-container">
+      <div className="main-container">
         <AlbumDetails albumsItems={albumsItems} />
       </div>
     </>

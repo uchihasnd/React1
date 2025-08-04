@@ -3,7 +3,7 @@ import TableHeaders from "./TableHeaders";
 
 export default function TableAlbum({ tracks }) {
   return (
-    <table className="album-table">
+    <table className="table-container">
       <TableHeaders />
       <TableBody tracks={tracks} />
     </table>

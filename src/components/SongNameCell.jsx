@@ -1,12 +1,12 @@
 export default function SongNameCell({ songName, bandName }) {
   return (
-    <td className="album-cell">
-      <a href="" className="a-link">
+    <td className="centered-cell">
+      <a href="" className="a-link-styles">
         {songName}
       </a>
       <br></br>
-      <a href="" className="a-link">
-        <span className="band-name">{bandName}</span>
+      <a href="" className="a-link-styles">
+        <span className="title-small-gray">{bandName}</span>
       </a>
     </td>
   );

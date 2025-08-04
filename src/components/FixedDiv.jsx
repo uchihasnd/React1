@@ -11,9 +11,9 @@ export default function FixedDiv({ artistName }) {
     }
   });
   return (
-    <div id="divFixed" className="div-play-fixed div-fixed">
+    <div id="divFixed" className="flex-container-fixed padding-10-20 div-fixed">
       <ButtonPlayAll />
-      <span className="artist-fixed">{artistName}</span>
+      <span className="title-big-bold">{artistName}</span>
     </div>
   );
 }

@@ -5,20 +5,20 @@ export default function DetailsContent({
   albumInfo: { albumName, coverArt, tracks, type, date },
 }) {
   return (
-    <div className="album-info">
-      <div className="album-content">
+    <div className="mt20-mb60">
+      <div className="grid-container-columns">
         <div className="album-image-container">
           <img
             src={coverArt.sources[0].url}
             alt="Album cover"
-            className="cover-album"
+            className="img-136px"
           />
         </div>
-        <div className="album-details">
-          <a href="" className="album-title">
+        <div className="mb-20">
+          <a href="" className="title-big-bold link-text-white mt-mb-5">
             {albumName}
           </a>
-          <p className="details">
+          <p className="text-small-lowercase mt-mb-5">
             {type} • {date.year} • {tracks.totalCount} Tracks
           </p>
           <AlbumButtons albumName={albumName} />

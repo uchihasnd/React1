@@ -7,26 +7,26 @@ export default function Header({
   return (
     <>
       <div
-        className="header-artist"
+        className="flex-container-column"
         style={{
           backgroundImage: `url(${url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <span className="header-info">
+        <span className="flex-container-relative">
           {verified && (
             <>
               <span className="material-symbols-outlined verified-icon filled-icon">
                 verified
               </span>
               <span className="circle-white"></span>
-              <span className="info-header-text">Verified Artist</span>
+              <span className="text-small-600">Verified Artist</span>
             </>
           )}
         </span>
-        <h1 className="artist-title header-info">{artistName}</h1>
-        <span className="header-info info-header-text">
+        <h1 className="main-title flex-container-relative">{artistName}</h1>
+        <span className="flex-container-relative text-small-600">
           {monthlyListeners.toLocaleString()} monthly listeners
         </span>
       </div>

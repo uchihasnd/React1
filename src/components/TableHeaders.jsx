@@ -6,16 +6,18 @@ export default function TableHeaders() {
     {
       header: "duration",
       cellContent: (
-        <span className="material-symbols-outlined icon-header">schedule</span>
+        <span className="material-symbols-outlined icon-small-centered">
+          schedule
+        </span>
       ),
     },
   ];
 
   return (
-    <thead className="header-table">
-      <tr className="header-table">
+    <thead className="title-small">
+      <tr>
         {headers.map(({ cellContent }, index) => (
-          <th key={index} className="table-header-cell">
+          <th key={index} className="padding-10 cell-container">
             {cellContent}
           </th>
         ))}
