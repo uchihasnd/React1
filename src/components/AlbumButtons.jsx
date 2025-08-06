@@ -1,6 +1,7 @@
 import Tooltip from "./tooltips/Tooltip";
 
 export default function AlbumButtons({ albumName }) {
+  const text = `More options for ${albumName}`;
   return (
     <div>
       <button className="button-round-white scale filled-icon mt-mb-5 pointer-element">
@@ -16,7 +17,7 @@ export default function AlbumButtons({ albumName }) {
       </button>
       <button className="button-round-gray scale pointer-element relative-container">
         <span className="material-symbols-outlined">more_horiz</span>
-        <Tooltip tooltipText={albumName} />
+        <Tooltip tooltipText={text} />
       </button>
     </div>
   );
