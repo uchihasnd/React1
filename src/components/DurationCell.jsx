@@ -1,7 +1,7 @@
 import ButtonLikedSong from "./ButtonLikedSong";
 import MoreOptionsSong from "./MoreOptionsSong";
 
-export default function DurationCell({ minutes, seconds, songName }) {
+export default function DurationCell({ minutes, seconds }) {
   return (
     <td className="centered-cell">
       <div className="flex-container-3-elements">
@@ -9,7 +9,7 @@ export default function DurationCell({ minutes, seconds, songName }) {
         <span className="container-40px">
           {minutes}:{seconds}
         </span>
-        <MoreOptionsSong songName={songName} />
+        <MoreOptionsSong />
       </div>
     </td>
   );
