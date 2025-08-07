@@ -1,8 +1,8 @@
-import MillisecondsConverter from "./MillisecondsConverter";
 import PlaycountCell from "./PlaycountCell";
 import SongNameCell from "./SongNameCell";
 import TrackNumberCell from "./TrackNumberCell";
 import { SongContext } from "../utils/context";
+import DurationCell from "./DurationCell";
 
 export default function TableRow({ tracksInfo }) {
   const { track } = tracksInfo;
@@ -20,7 +20,7 @@ export default function TableRow({ tracksInfo }) {
         <SongNameCell songName={trackName} bandName={profile.name} />
         <PlaycountCell playcount={Number(playcount).toLocaleString()} />
         <SongContext.Provider value={trackName}>
-          <MillisecondsConverter totalMilliseconds={totalMilliseconds} />
+          <DurationCell totalMilliseconds={totalMilliseconds} />
         </SongContext.Provider>
       </tr>
     </>
