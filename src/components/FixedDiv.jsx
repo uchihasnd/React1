@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import ButtonPlayAll from "./ButtonPlayAll";
+import { ArtistContext } from "../utils/context";
 
-export default function FixedDiv({ artistName }) {
+export default function FixedDiv() {
+  const { artistName } = useContext(ArtistContext);
+
   window.addEventListener("scroll", function () {
     const element = document.getElementById("divFixed");
 

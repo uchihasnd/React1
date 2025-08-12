@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import ButtonPlayAll from "./ButtonPlayAll";
 import FixedDiv from "./FixedDiv";
 import Tooltip from "./tooltips/Tooltip";
+import { ArtistContext } from "../utils/context";
 
-export default function FollowBar({ artistName }) {
+export default function FollowBar() {
+  const { artistName } = useContext(ArtistContext);
   const text = `More options for ${artistName}`;
 
   return (
@@ -17,7 +20,7 @@ export default function FollowBar({ artistName }) {
           <Tooltip tooltipText={text} />
         </button>
       </div>
-      <FixedDiv artistName={artistName} />
+      <FixedDiv />
     </>
   );
 }

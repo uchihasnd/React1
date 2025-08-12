@@ -1,9 +1,9 @@
-export default function Header({
-  artistName,
-  verified,
-  monthlyListeners,
-  url,
-}) {
+import { useContext } from "react";
+import { ArtistContext } from "../utils/context";
+
+export default function Header() {
+  const { url, verified, monthlyListeners, artistName } =
+    useContext(ArtistContext);
   return (
     <div
       className="flex-container-column"
