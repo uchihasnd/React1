@@ -2,7 +2,6 @@ import { createContext } from "react";
 
 import data from "../js/data";
 
-export const SongContext = createContext(null);
 export const ArtistContext = createContext(null);
 
 export const useDataArtist = () => {
