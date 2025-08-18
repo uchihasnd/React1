@@ -1,5 +1,4 @@
 import { createContext } from "react";
-
 import data from "../js/data";
 
 export const ArtistContext = createContext(null);
@@ -20,8 +19,11 @@ export const useDataArtist = () => {
   return { artistName, verified, monthlyListeners, url, albumsItems };
 };
 
-export const useArtistContext = () => {
+export const ArtistProvider = ({ children }) => {
   const contextValue = useDataArtist();
-
-  return contextValue;
+  return (
+    <ArtistContext.Provider value={contextValue}>
+      {children}
+    </ArtistContext.Provider>
+  );
 };

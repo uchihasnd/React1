@@ -2,18 +2,18 @@ import Header from "./components/Header";
 import "./App.css";
 import FollowBar from "./components/FollowBar";
 import AlbumDetails from "./components/AlbumDetails";
-import { ArtistContext, useArtistContext } from "./utils/context";
+import { ArtistProvider } from "./utils/context";
 
 function App() {
   return (
     <>
-      <ArtistContext.Provider value={useArtistContext()}>
+      <ArtistProvider>
         <Header />
         <FollowBar />
         <div className="main-container">
-          <AlbumDetails albumsItems={useArtistContext().albumsItems} />
+          <AlbumDetails />
         </div>
-      </ArtistContext.Provider>
+      </ArtistProvider>
     </>
   );
 }
